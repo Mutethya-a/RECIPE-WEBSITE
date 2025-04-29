@@ -1,0 +1,59 @@
+/* style.css */
+
+:root {
+    --pink-light: #ffe6ec;
+    --pink-main: #ffb6c1;
+    --pink-dark: #ff6781;
+    --text-dark: #333;
+    --text-light: #fff;
+    --font-main: 'Segoe UI', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    background-color: var(--pink-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 10px;
+  }
+  
+  header, nav, footer {
+    background-color: var(--pink-main);
+    padding: 1em;
+    text-align: center;
+    color: var(--text-light);
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  
+
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
