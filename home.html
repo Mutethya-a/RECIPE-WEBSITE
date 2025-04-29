@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Pink Recipe Hub</title>
     <link rel="stylesheet" href="./Styles/styles.css" />
-    <script src="./src/script.js" defer></script>
+    <style>
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .hero a {
+            background-color: var(--pink-dark);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero a:hover {
+            background-color: #e05670;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Welcome Pink Recipe Hub</h1>
+        <h1>Pink Recipe Hub</h1>
         <nav>
             <a href="home.html">Home</a>
             <a href="about.html">About</a>
@@ -21,15 +61,27 @@
     </header>
 
     <main>
+        <section class="hero">
+            <h2>Welcome to Your Delicious Escape</h2>
+            <p>Explore sweet and simple recipes designed with love and a touch of pink. Perfect for beginners and
+                foodies alike!</p>
+            <a href="recipes.html">🍓 Get Cooking</a>
+        </section>
+
         <section>
-            <h2>Discover Delicacies</h2>
-            <p>Your go-to place for easy, stylish, and sweet recipes.</p>
+            <h3>Why Pink Recipe Hub?</h3>
+            <p>
+                Cooking isn’t just about food — it’s about expression, creativity, and comfort.
+                We bring you handpicked recipes with beautiful visuals and clear steps to help you
+                cook confidently and stylishly.
+            </p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Pink Recipe Hub</p>
     </footer>
+    <script src="./src/script.js"></script>
 
 </body>
 
