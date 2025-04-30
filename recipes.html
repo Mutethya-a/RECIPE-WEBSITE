@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recipes| Our Recipes</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
@@ -78,6 +79,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -93,7 +95,9 @@
 
   <section class="recipes-container">
     <div class="recipe-card">
-      <img src="https://img.freepik.com/free-photo/flat-lay-composition-pasta-bolognesa_23-2148189891.jpg?t=st=1745995832~exp=1745999432~hmac=e44875ac6e332296390ef2795bfd556dc08f0dacb6d1cc395c0ceb0c0a3c99f6&w=1380" alt="Spaghetti Bolognese" />
+      <img
+        src="https://img.freepik.com/free-photo/flat-lay-composition-pasta-bolognesa_23-2148189891.jpg?t=st=1745995832~exp=1745999432~hmac=e44875ac6e332296390ef2795bfd556dc08f0dacb6d1cc395c0ceb0c0a3c99f6&w=1380"
+        alt="Spaghetti Bolognese" />
       <h3>Spaghetti Bolognese</h3>
       <p><strong>Ingredients:</strong> Spaghetti, minced meat, tomatoes, garlic, onion</p>
       <p><strong>Steps:</strong></p>
@@ -108,7 +112,9 @@
     </div>
 
     <div class="recipe-card">
-      <img src="https://img.freepik.com/free-photo/cheese-pancake-with-honey_1339-5251.jpg?t=st=1745996057~exp=1745999657~hmac=866bde598e7ce85a0e440240315896898506a3f80b9c9e49c50afb1d20f6c23e&w=1380" alt="Fluffy Pancakes" />
+      <img
+        src="https://img.freepik.com/free-photo/cheese-pancake-with-honey_1339-5251.jpg?t=st=1745996057~exp=1745999657~hmac=866bde598e7ce85a0e440240315896898506a3f80b9c9e49c50afb1d20f6c23e&w=1380"
+        alt="Fluffy Pancakes" />
       <h3>Fluffy Pancakes</h3>
       <p><strong>Ingredients:</strong> Flour, eggs, milk, sugar, baking powder</p>
       <p><strong>Steps:</strong></p>
@@ -124,7 +130,9 @@
     </div>
 
     <div class="recipe-card">
-      <img src="https://img.freepik.com/free-photo/top-view-tasty-salad-with-vegetables_23-2148515491.jpg?t=st=1745996189~exp=1745999789~hmac=af3e86599417a4110dcfc50ce6abb8672b852ea1bf8704049ae1b20248f6249a&w=900" alt="Fresh Garden Salad" />
+      <img
+        src="https://img.freepik.com/free-photo/top-view-tasty-salad-with-vegetables_23-2148515491.jpg?t=st=1745996189~exp=1745999789~hmac=af3e86599417a4110dcfc50ce6abb8672b852ea1bf8704049ae1b20248f6249a&w=900"
+        alt="Fresh Garden Salad" />
       <h3>Garden Salad</h3>
       <p><strong>Ingredients:</strong> Lettuce, tomato, cucumber, olives, vinaigrette</p>
       <p><strong>Steps:</strong></p>
@@ -138,10 +146,26 @@
       </ol>
     </div>
   </section>
+  <section class="submit-recipe">
+    <h2>Submit Your Recipe</h2>
+    <form id="recipeForm">
+      <label for="recipeName">Recipe Name:</label>
+      <input type="text" id="recipeName" name="recipeName" required />
+
+      <label for="ingredients">Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" name="instructions" rows="4" required></textarea>
+
+      <button type="submit">Submit Recipe</button>
+    </form>
+  </section>
 
   <footer>
     <p>&copy; 2025 My Recipe Website</p>
   </footer>
 
 </body>
+
 </html>
