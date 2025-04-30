@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Recipes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffc0cb;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #880e4f;
+    }
+
+    nav {
+      background-color: #f8bbd0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #880e4f;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .recipes-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .recipe-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .recipe-card h3 {
+      color: #ad1457;
+    }
+
+    .recipe-card ol {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Favorite Recipes</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <section class="recipes-container">
+    <div class="recipe-card">
+      <img src="https://img.freepik.com/free-photo/flat-lay-composition-pasta-bolognesa_23-2148189891.jpg?t=st=1745995832~exp=1745999432~hmac=e44875ac6e332296390ef2795bfd556dc08f0dacb6d1cc395c0ceb0c0a3c99f6&w=1380" alt="Spaghetti Bolognese" />
+      <h3>Spaghetti Bolognese</h3>
+      <p><strong>Ingredients:</strong> Spaghetti, minced meat, tomatoes, garlic, onion</p>
+      <p><strong>Steps:</strong></p>
+      <ol>
+        <li>Boil spaghetti in salted water until al dente, then drain.</li>
+        <li>Sauté chopped onion and garlic in a pan until soft.</li>
+        <li>Add minced meat and cook until browned.</li>
+        <li>Stir in chopped tomatoes and simmer for 15–20 minutes.</li>
+        <li>Mix the sauce with the spaghetti.</li>
+        <li>Serve hot with grated cheese if desired.</li>
+      </ol>
+    </div>
+
+    <div class="recipe-card">
+      <img src="images/pancakes.jpg" alt="Fluffy Pancakes" />
+      <h3>Fluffy Pancakes</h3>
+      <p><strong>Ingredients:</strong> Flour, eggs, milk, sugar, baking powder</p>
+      <p><strong>Steps:</strong></p>
+      <ol>
+        <li>In a bowl, whisk together flour, sugar, and baking powder.</li>
+        <li>In another bowl, beat the eggs and mix with milk.</li>
+        <li>Combine wet and dry ingredients until just mixed.</li>
+        <li>Heat a lightly greased skillet over medium heat.</li>
+        <li>Pour batter onto the skillet (about 1/4 cup per pancake).</li>
+        <li>Flip when bubbles appear; cook until golden on both sides.</li>
+        <li>Serve with syrup, butter, or fruits.</li>
+      </ol>
+    </div>
+
+    <div class="recipe-card">
+      <img src="images/salad.jpg" alt="Fresh Garden Salad" />
+      <h3>Garden Salad</h3>
+      <p><strong>Ingredients:</strong> Lettuce, tomato, cucumber, olives, vinaigrette</p>
+      <p><strong>Steps:</strong></p>
+      <ol>
+        <li>Wash all vegetables thoroughly.</li>
+        <li>Chop lettuce, tomato, and cucumber into bite-sized pieces.</li>
+        <li>Place all vegetables in a large bowl and add olives.</li>
+        <li>Drizzle with vinaigrette dressing.</li>
+        <li>Toss gently to combine.</li>
+        <li>Serve chilled as a side or main dish.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Recipe Website</p>
+  </footer>
+
+</body>
+</html>
