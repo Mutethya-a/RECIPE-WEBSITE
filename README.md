@@ -41,7 +41,8 @@ Welcome to **Pink Recipe Hub** — a beautiful, responsive web application desig
    ```
 2. Open the folder:
    ```bash
-   cd pink-recipe-hub
+   cd Documents
+   cd RECIPE-WEBSITE
    ```
 3. Launch `home.html` in your browser.
 
@@ -49,23 +50,6 @@ Welcome to **Pink Recipe Hub** — a beautiful, responsive web application desig
 
 > [View on Vercel](https://your-vercel-deployment-url.vercel.app)
 
----
-
-## 📂 Project Structure
-
-```
-├── home.html
-├── about.html
-├── recipes.html
-├── contact.html
-├── Styles/
-│   ├── styles.css
-│   └── contact.css
-├── src/
-│   └── script.js
-├── README.md
-└── .gitignore
-```
 
 ---
 
@@ -85,3 +69,4 @@ This project is for educational purposes and is open for further development and
 ## ✨ Author
 
 Created by Mutethya Nzioka as part of a frontend web development project.
+```
