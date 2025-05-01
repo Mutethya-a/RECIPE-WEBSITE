@@ -48,7 +48,7 @@ Welcome to **Pink Recipe Hub** — a beautiful, responsive web application desig
 
 ### Live Site
 
-> [View on Vercel](https://recipe-website-lemon-three.vercel.app/)
+> [View on Vercel](https://recipe-website-vert-mu.vercel.app/)
 
 
 ---
