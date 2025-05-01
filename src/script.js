@@ -1,24 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const recipeForm = document.getElementById('recipeForm');
+document.getElementById('recipe-form').addEventListener('submit', function (e) {
+    e.preventDefault();
 
-    // Handle form submission
-    recipeForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent page reload
+    const recipeTitle = document.getElementById('recipe-title').value;
+    const ingredients = document.getElementById('ingredients').value;
+    const instructions = document.getElementById('instructions').value;
 
-        const recipeName = document.getElementById('recipeName').value;
-        const ingredients = document.getElementById('ingredients').value;
-        const instructions = document.getElementById('instructions').value;
+    console.log('Recipe Title:', recipeTitle);
+    console.log('Ingredients:', ingredients);
+    console.log('Instructions:', instructions);
 
-        // Basic validation
-        if (recipeName && ingredients && instructions) {
-            // Normally you'd submit the form data to a server here (e.g., via an AJAX request)
-            alert('Recipe submitted successfully!');
-            recipeForm.reset(); // Reset the form after submission
-        } else {
-            alert('Please fill in all fields before submitting.');
-        }
-    });
+    document.getElementById('recipe-form').reset();
+
+    alert('Recipe submitted successfully!');
 });
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.querySelector('.contact-form');
