@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const recipeForm = document.getElementById('recipeForm');
+
+    // Handle form submission
     recipeForm.addEventListener('submit', function (event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent page reload
 
         const recipeName = document.getElementById('recipeName').value;
         const ingredients = document.getElementById('ingredients').value;
         const instructions = document.getElementById('instructions').value;
 
+        // Basic validation
         if (recipeName && ingredients && instructions) {
+            // Normally you'd submit the form data to a server here (e.g., via an AJAX request)
             alert('Recipe submitted successfully!');
-            recipeForm.reset();
+            recipeForm.reset(); // Reset the form after submission
         } else {
             alert('Please fill in all fields before submitting.');
         }
